@@ -46,7 +46,7 @@ atualizado: 2026-11-17
 | 6 | Exemplo sozinho; exercícios N1 e N2 sem consulta | 11 e 12 | cada erro: `just erro`; `just professor fechar mat-linguagem MINUTOS` |
 | 7 | Exercícios N3; confira no gabarito | 12 e 13 | cada erro: `just erro`; `just professor fechar mat-linguagem MINUTOS` |
 | 8 | Erros comuns, setup, mercado; livro: tipos de demonstração (só reconhecer) | 5 a 10 e livro | `just livros ler ...`; algo manual ou lento no setup: `just atrito` |
-| 9 | Exercício N4 (código), com `tsc --strict` sem erro | 12 | o código no repositório `logica-ts`; `just professor praticei mat-linguagem` |
+| 9 | Exercício N4 (código), com `tsc --strict` sem erro | 12 | salve o código numa pasta `logica-ts` (vira repositório quando você chegar ao Git, na Etapa 1); `just professor praticei mat-linguagem` |
 | 10 | Resumo de uma tela e cartões do Anki com as suas palavras | 14 e 15 | `just professor fechar mat-linguagem MINUTOS` |
 | Fim | Fechar o assunto: ficha e colheita (fim da seção 15) | 15 | `just ficha 0.2` e `just colher 0.2` |
 
