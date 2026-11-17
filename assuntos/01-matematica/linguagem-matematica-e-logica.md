@@ -157,7 +157,7 @@ Com dois quantificadores **iguais**, a ordem não importa: ∀x ∀y ≡ ∀y �
 - **O "se… então" lógico não é causa.** "Se 2 + 2 = 5, então a Lua é de queijo" é verdadeiro na lógica (antecedente falso). Isso estranha no começo e não descreve causalidade.
 - **A tabela-verdade explode:** com 20 proposições são mais de um milhão de linhas. Para fórmulas grandes, usa-se álgebra (as leis) e, em computação, algoritmos especializados (SAT).
 - **Lógica proposicional não fala de "todos" e "alguns";** para isso é preciso a lógica de predicados, que é bem mais rica e mais difícil.
-- **No JavaScript, `&&` e `||` não devolvem só `true` ou `false`:** devolvem um dos operandos (seção 9). É uma fonte clássica de bug.
+- **No JavaScript, `&&` e `||` não devolvem só `true` ou `false`:** devolvem um dos operandos (exemplo executado na seção 9). É uma fonte clássica de bug.
 
 ## 7. Quando usar e quando não usar
 
@@ -184,6 +184,22 @@ Com dois quantificadores **iguais**, a ordem não importa: ∀x ∀y ≡ ∀y �
 - **Escada de inadimplência (exercício do Mês 1):** cada faixa é uma conjunção de fronteiras (`dias >= 30 && dias < 60`); as faixas precisam ser exaustivas e não se sobrepor, o que é uma pergunta de lógica.
 - **Quantificadores no código:** ∀ é `every`, ∃ é `some`. "Todos os itens têm estoque" = `itens.every(i => i.estoque > 0)`.
 - **Curto-circuito como proteção:** `cliente && cliente.nome` só lê o nome se o cliente existir, porque o `&&` para no primeiro valor falso.
+- **O que `&&`, `||` e `??` devolvem** (executado com Node 22.23.4 e conferido com `tsc --strict`, TypeScript 7.0.2; os valores vêm de funções para o compilador não acusar condição sempre verdadeira ou sempre falsa):
+
+```ts
+function mostrar(rotulo: string, valor: unknown): void {
+  console.log(rotulo, JSON.stringify(valor));
+}
+const quantidade: number = Number("0");
+const nome: string = String("");
+mostrar("0 || 1     ->", quantidade || 1);      // 1   (o || troca o zero)
+mostrar("0 ?? 1     ->", quantidade ?? 1);      // 0   (o ?? só troca null e undefined)
+mostrar('"" || "?"  ->', nome || "?");          // "?"
+mostrar('"" && "x"  ->', nome && "x");          // ""  (para no primeiro falso e devolve ele)
+mostrar('"a" && "x" ->', String("a") && "x");   // "x" (tudo verdadeiro: devolve o último)
+```
+
+  Regra: `&&` devolve o primeiro valor falso, ou o último se todos forem verdadeiros; `||` devolve o primeiro verdadeiro, ou o último; `??` devolve o da esquerda, a não ser que ele seja `null` ou `undefined`.
 - **Revisão de código de IA (Trilha R):** confira toda condição que a IA escrever: fronteira (`>` ou `>=`), negação, "ou" inclusivo ou exclusivo e parênteses.
 - **Professor:** módulo `mat-linguagem`.
 
