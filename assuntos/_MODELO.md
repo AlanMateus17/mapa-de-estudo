@@ -45,11 +45,12 @@ atualizado: AAAA-MM-DD
 > **Os 20% que resolvem 80%:** 3 a 5 itens.
 
 ## Roteiro (blocos de 25 minutos)
-| Bloco | O que fazer | Seções |
-Cada bloco termina com o protocolo de fim de bloco. O último inclui os registros (seção 15).
+| Bloco | O que fazer (ação concreta, não "estudar X") | Seções | Ao terminar, registre (comando) |
+Última linha: "Fim | Fechar o assunto: ficha e colheita | 15 | just ficha ETAPA e just colher ETAPA".
+Depois da tabela: "Como fazer cada bloco (sempre igual)": antes, durante, fechar, registrar (copie do 0.1).
 
 ## 0. Antes de começar: diagnóstico
-3 perguntas rápidas, sem consulta. Acertou as 3? Pule para os exercícios N3. Errou alguma? Siga o roteiro.
+Os 7 passos do 0.1 (preparar, responder com porquê, dar a certeza 1 a 3, parar no timer, conferir, `just diag`, seguir a decisão), e então 3 perguntas sem consulta, com a resposta comentada na seção 13.
 
 ## 1. Por que isso existe (o problema e a história)
 ## 2. O que é
@@ -81,7 +82,9 @@ O mínimo para revisar em 2 minutos sem reler o arquivo: as definições, as reg
 - Leitura: `just livros ler LIVRO --trecho ... --min ... --assunto ETAPA --nota "..."`
 - Cada erro nos exercícios: `just erro ETAPA "o erro" --certo "o certo"`
 - Algo do setup travou ou foi manual: `just atrito "..." --area ...`
-- Fim do assunto: `just professor fechar ID MINUTOS` e preencha a ficha dupla e o registro de entrevista.
+- Diagnóstico: `just diag ETAPA c3 x2 c1 --min N` (certo/errado + certeza 1 a 3).
+- Tempo de cada bloco: `just professor fechar ID MINUTOS`.
+- Fechar o assunto: `just ficha ETAPA`, preencher sem abrir o arquivo, `just colher ETAPA --seco` e `just colher ETAPA`. Os componentes do `ensino-ti` ligados à etapa ficam em `data/aulas.json` do dev-setup (acrescente a etapa lá antes).
 
 ## 16. Fontes (na ordem de uso)
 1. Documentação oficial ou fonte primária · 2. Akita (só o que foi conferido) · 3. Curso da Alura · 4. Livro

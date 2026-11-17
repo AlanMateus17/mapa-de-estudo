@@ -36,29 +36,52 @@ atualizado: 2026-11-17
 
 ## Roteiro (blocos de 25 minutos, sexta de manhã)
 
-| Bloco | O que fazer | Seções |
-|---|---|---|
-| 1 | Diagnóstico. Depois leia o início do Cap. 1 do VHSlins (raciocínio, sentenças, conectivos) | 0 e livro |
-| 2 | Por que existe e o que é; tabela-verdade de cor | 1 e 2 |
-| 3 | Como funciona por baixo; checklist de conceitos | 3 e 4 |
-| 4 | Livro: quantificadores, tautologia, argumento e equivalência | livro |
-| 5 | Exemplo resolvido e exemplo com lacunas | 11 |
-| 6 | Exemplo sozinho; exercícios N1 e N2 | 11 e 12 |
-| 7 | Exercícios N3; confira no gabarito; `just erro` para cada erro | 12, 13 e 15 |
-| 8 | Erros comuns, setup, mercado; livro: tipos de demonstração (só reconhecer) | 5 a 10 e livro |
-| 9 | Exercício N4 (código) | 12 |
-| 10 | Resumo de uma tela, cartões do Anki com as suas palavras e registros | 14 e 15 |
+| Bloco | O que fazer | Seções | Ao terminar, registre |
+|---|---|---|---|
+| 1 | Diagnóstico (passo a passo na seção 0). Depois leia o início do Cap. 1 do VHSlins (raciocínio, sentenças, conectivos) | 0 e livro | `just diag 0.2 ...`; `just livros ler vhslins-matematica-basica --trecho "Cap. 1" --min MINUTOS --assunto 0.2 --nota "..."` |
+| 2 | Por que existe e o que é; tabela-verdade de cor: escreva as 5 tabelas no caderno sem olhar e só então confira | 1 e 2 | cada linha errada: `just erro 0.2 "..." --certo "..."`; `just professor fechar mat-linguagem MINUTOS` |
+| 3 | Como funciona por baixo; checklist: marque `[x]` só no que você explica em voz alta sem olhar | 3 e 4 | `just professor fechar mat-linguagem MINUTOS` |
+| 4 | Livro: quantificadores, tautologia, argumento e equivalência. Confira a precedência de → e ↔ que o livro usa | livro | `just livros ler ...` com o trecho lido; se a precedência for outra, anote para corrigir a seção 2 |
+| 5 | Exemplo resolvido (rode o código e explique cada linha) e exemplo com lacunas | 11 | `just professor fechar mat-linguagem MINUTOS` |
+| 6 | Exemplo sozinho; exercícios N1 e N2 sem consulta | 11 e 12 | cada erro: `just erro`; `just professor fechar mat-linguagem MINUTOS` |
+| 7 | Exercícios N3; confira no gabarito | 12 e 13 | cada erro: `just erro`; `just professor fechar mat-linguagem MINUTOS` |
+| 8 | Erros comuns, setup, mercado; livro: tipos de demonstração (só reconhecer) | 5 a 10 e livro | `just livros ler ...`; algo manual ou lento no setup: `just atrito` |
+| 9 | Exercício N4 (código), com `tsc --strict` sem erro | 12 | o código no repositório `logica-ts`; `just professor praticei mat-linguagem` |
+| 10 | Resumo de uma tela e cartões do Anki com as suas palavras | 14 e 15 | `just professor fechar mat-linguagem MINUTOS` |
+| Fim | Fechar o assunto: ficha e colheita (fim da seção 15) | 15 | `just ficha 0.2` e `just colher 0.2` |
 
-Cada bloco termina com o protocolo de fim de bloco (assunto 0.1): feche, reconstrua de cabeça, explique em 3 a 5 frases, anote o tempo.
+Cada bloco termina com o protocolo de fim de bloco do assunto 0.1.
+
+### Como fazer cada bloco (sempre igual)
+
+1. **Antes (1 min):** celular fora do alcance, uma aba só, timer de 25 minutos à vista. Escreva no caderno, em uma linha, o que o bloco tem que resolver (a coluna "O que fazer").
+2. **Durante (20 min):** antes de ler cada seção, transforme o título dela em pergunta e tente responder de cabeça por 30 segundos; só então leia. Código e exercício: primeiro tente, depois confira.
+3. **Fechar (4 min):** o protocolo de fim de bloco do 0.1. Feche o arquivo, reconstrua de cabeça o que o bloco resolveu, explique em 3 a 5 frases no caderno, faça de 1 a 3 cartões que pedem para usar.
+4. **Registrar (1 min):** o comando da última coluna. Os registros são o que deixa o setup trabalhar por você: revisões, provas, aulas e material das ofertas saem deles.
+
+Se o timer tocar no meio de uma seção, pare mesmo assim e feche o bloco. O próximo bloco começa por ela.
 
 ## 0. Antes de começar: diagnóstico
 
-Responda sem consulta, em 3 minutos:
+O diagnóstico faz três coisas ao mesmo tempo: decide se você precisa do apoio deste arquivo, mostra onde está o erro mais perigoso (o que você tem certeza e está errado) e já ensina, porque tentar responder antes de estudar melhora o aprendizado mesmo quando você erra (o *efeito do pré-teste*: Richland, Kornell e Kao 2009).
+
+**Como fazer, passo a passo:**
+1. **Preparar (1 min):** caderno, caneta e um timer de 3 minutos. Role este arquivo só até esta seção: não leia mais nada antes.
+2. **Responder (3 min):** sem consulta e sem IA. Escreva a resposta completa, com uma frase de porquê; "sim" ou "não" sozinho não vale.
+3. **Dar a certeza, antes de conferir:** ao lado de cada resposta, escreva **1** (chute), **2** (acho) ou **3** (certeza).
+4. **Parar no timer:** o que ficou em branco conta como errado no chute (`x1`).
+5. **Conferir:** abra o gabarito (seção 13) e marque **c** (certo) ou **x** (errado) em cada uma. Resposta pela metade é **x**.
+6. **Registrar:** uma letra e um número por pergunta, na ordem: `just diag 0.2 c3 x2 c1 --min 3`.
+7. **Seguir a decisão que o comando der:**
+   - **Modo rápido** (todas certas, com certeza 2 ou 3): leia rápido as seções 2 e 4 e vá direto para os exercícios N3.
+   - **Roteiro inteiro:** qualquer erro, ou qualquer acerto no chute. Acertar no chute é não saber.
+   - **Errou com certeza 3:** leia agora a resposta comentada dessa pergunta e anote com `just erro`. É o erro que mais atrapalha se ficar, e também o que você mais aprende ao corrigir: erros cometidos com muita certeza são corrigidos com mais facilidade depois do retorno (o *efeito de hipercorreção*: Butterfield e Metcalfe 2001).
+
+**As perguntas:**
 1. Qual é a negação de "todos os pedidos foram entregues"?
 2. Se p é falso e q é verdadeiro, qual é o valor de "se p então q"?
 3. Simplifique `!(a || b)` sem o `!` do lado de fora.
 
-Respostas na seção 13. **Acertou as 3?** Leia rápido as seções 2 e 4 e vá direto para os exercícios N3. **Errou alguma?** Siga o roteiro inteiro.
 
 ## 1. Por que isso existe (o problema e a história)
 
@@ -358,8 +381,26 @@ O primeiro é V: cada cliente tem o seu pedido. O segundo é F: nenhum pedido é
 - **Leitura:** `just livros ler vhslins-matematica-basica --trecho "Cap. 1" --min 50 --assunto 0.2 --nota "o que entendi, com as minhas palavras"`
 - **Cada erro nos exercícios:** `just erro 0.2 "neguei 'todos' como 'todos não'" --certo "algum não"`
 - **Algo do setup travou ou foi manual** (por exemplo, rodar o TypeScript): `just atrito "..." --area estudo`
-- **Fim do assunto:** `just professor fechar mat-linguagem MINUTOS` e preencha a ficha dupla (a aula da promessa é uma boa ficha) e o registro de entrevista.
 - **Anki:** um cartão por item da seção 14, com as suas palavras, pedindo para **usar** ("negue: …", "simplifique: …"), não para reconhecer.
+
+### Fechar o assunto: ficha e colheita (o estudo vira aula e material de renda)
+
+Faça depois do último bloco, num bloco próprio de 25 a 50 minutos. É o que transforma o seu estudo em material sem estudar duas vezes.
+
+1. **Criar a ficha:** `just ficha 0.2`. Ela abre no vault, em `09-material-producao-simultanea/fichas/`.
+2. **Preencher sem abrir este arquivo:** escrever de cabeça é a última recuperação do assunto. Se travar numa parte, essa parte volta para o caderno de erros, não para a ficha.
+   - **Explicação:** o que é, por que existe e como funciona, do jeito que você explicaria a um aluno do 1º ano. Vai para o livro, o minicurso, a aula particular e os posts.
+   - **Exemplo resolvido:** um exemplo seu, passo a passo, com o porquê de cada passo.
+   - **Exercícios:** no mínimo 3, em linhas `| N2 | pergunta | resposta |`, com perguntas novas suas (por exemplo, uma regra de negócio para negar com De Morgan). Vão para o AM Mentor, o baralho do Anki e o banco de questões.
+   - **Aula:** uma aula de 50 minutos (a aula da promessa ("se tirar 10, ganha o jogo") é uma boa abertura): objetivo, abertura (5 min), explicação (15), prática (20) e verificação (10). Vai para Lógica de Programação, Introdução à Lógica e Matemática Discreta no `ensino-ti`. Nada de nome, nota ou dado de aluno.
+   - **Registro de entrevista** e, se tiver, **Ideias** de produto ou conteúdo.
+3. **Ensaiar:** `just colher 0.2 --seco`. Mostra o que vai para onde, sem escrever nada. Se faltar algo, o comando lista o quê.
+4. **Colher:** `just colher 0.2`. Entrega a explicação ao pipeline de conteúdo, os exercícios ao banco e ao Anki, e o plano de aula aos componentes do `ensino-ti`.
+5. **Conferir os destinos:**
+   - **Anki:** Arquivo → Importar → `~/AMtech/banco/anki/0.2.tsv`.
+   - **ensino-ti:** revise os planos de aula novos e faça o commit lá.
+   - **Fila de conteúdo:** aprove ou recuse as peças que o pipeline gerar (`just fila`).
+6. **Depois de dar a aula de verdade (N4):** `just professor ensinei mat-linguagem`.
 
 ## 16. Fontes (na ordem de uso)
 
@@ -369,7 +410,16 @@ O primeiro é V: cada cliente tem o seu pedido. O segundo é F: nenhum pedido é
    - [Britannica: History of logic, Gottlob Frege](https://www.britannica.com/topic/history-of-logic/Gottlob-Frege)
    - Shannon, C. E. (1938). *A Symbolic Analysis of Relay and Switching Circuits.* Transactions of the AIEE, 57(12), 713–723.
 3. **Documentação:** [MDN: operador lógico AND (&&)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Logical_AND) · [MDN: operador de coalescência nula (??)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing)
+4. **Akita:** nenhum episódio conferido trata de lógica proposicional; os episódios de computação entram no 0.4.## 16. Fontes (na ordem de uso)
+
+1. **Livro:** VHSlins, *Matemática Básica*, Parte I, **Cap. 1, Linguagem Matemática**: raciocínio, sentenças, conectivos, quantificadores, tabela-verdade, tautologia e contradição, argumento, equivalência e tipos de demonstração. (Página do livro nunca vai para a IA.)
+2. **História, fontes de referência:**
+   - [Stanford Encyclopedia of Philosophy: The Emergence of First-Order Logic](https://plato.stanford.edu/entries/logic-firstorder-emergence/)
+   - [Britannica: History of logic, Gottlob Frege](https://www.britannica.com/topic/history-of-logic/Gottlob-Frege)
+   - Shannon, C. E. (1938). *A Symbolic Analysis of Relay and Switching Circuits.* Transactions of the AIEE, 57(12), 713–723.
+3. **Documentação:** [MDN: operador lógico AND (&&)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Logical_AND) · [MDN: operador de coalescência nula (??)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing)
 4. **Akita:** nenhum episódio conferido trata de lógica proposicional; os episódios de computação entram no 0.4.
+5. **Diagnóstico (por que ele é feito assim):** Richland, Kornell e Kao (2009). *The pretesting effect: Do unsuccessful retrieval attempts enhance learning?* Journal of Experimental Psychology: Applied, 15(3), 243–257. · Butterfield e Metcalfe (2001). *Errors committed with high confidence are hypercorrected.* Journal of Experimental Psychology: Learning, Memory, and Cognition, 27(6), 1491–1494. Detalhes no assunto 0.1.
 
 ## 17. Como saber que dominou
 

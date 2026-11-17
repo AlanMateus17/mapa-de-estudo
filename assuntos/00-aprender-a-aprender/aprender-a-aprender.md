@@ -20,6 +20,7 @@ fontes-conferidas:
   - Pashler et al. 2008, Psychological Science in the Public Interest 9(3)
   - Diekelmann e Born 2010, Nature Reviews Neuroscience 11
   - Sweller e Cooper 1985, Cognition and Instruction 2; Renkl, Atkinson, Maier e Staley 2002, Journal of Experimental Education 70(4); Kalyuga, Ayres, Chandler e Sweller 2003, Educational Psychologist 38
+  - Richland, Kornell e Kao 2009, Journal of Experimental Psychology: Applied 15(3); Butterfield e Metcalfe 2001, JEP: Learning, Memory, and Cognition 27(6)
   - Manual do Anki (algoritmos SM-2 e FSRS)
   - Akita #76 e #65, pelas transcrições completas publicadas no site dele (não pelo vídeo)
 pendente: []
@@ -44,26 +45,49 @@ atualizado: 2026-11-17
 
 Este é o único assunto que vem **antes de tudo**: os outros usam o protocolo de fim de bloco daqui. Faça os blocos 1 a 6 antes do primeiro assunto da Etapa 0; o bloco 7 é a terça do Akita.
 
-| Bloco | O que fazer | Seções |
-|---|---|---|
-| 1 | Diagnóstico. Por que isso existe e o que é | 0, 1 e 2 |
-| 2 | Como funciona por baixo; checklist de conceitos | 3 e 4 |
-| 3 | As técnicas e a evidência de cada uma; o que não funciona | 3.1 |
-| 4 | Estudar com TDAH; qualidades, defeitos e erros comuns | 3.2, 5 a 8 |
-| 5 | Exemplos com retirada de apoio (planejar um bloco e fazer cartões) | 11 |
-| 6 | Setup e mercado; exercícios N1 a N3; confira no gabarito; ligue o FSRS; resumo e registros | 9, 10, 12 a 15 |
-| 7 (terça) | Akita #76 e #65; compare com as seções 1 e 6 e escreva a nota de 5 frases | 1, 6 e 16 |
+| Bloco | O que fazer | Seções | Ao terminar, registre |
+|---|---|---|---|
+| 1 | Diagnóstico (passo a passo na seção 0). Por que isso existe e o que é | 0, 1 e 2 | `just diag 0.1 ...` e `just erro` para cada erro com certeza 3 |
+| 2 | Como funciona por baixo; checklist de conceitos: marque `[x]` só no que você explica em voz alta sem olhar | 3 e 4 | `just professor fechar b-aprender MINUTOS` |
+| 3 | As técnicas: cubra a coluna "Evidência" da tabela, preveja cada uma e só então confira | 3.1 | cada previsão errada: `just erro 0.1 "..." --certo "..."`; depois `just professor fechar b-aprender MINUTOS` |
+| 4 | Estudar com TDAH: escolha 2 princípios e escreva onde vai usá-los já no próximo bloco; qualidades, defeitos e erros comuns | 3.2, 5 a 8 | o que falta no seu ambiente: `just atrito "..." --area estudo`; `just professor fechar b-aprender MINUTOS` |
+| 5 | Exemplos: o 1 explicando cada linha em voz alta, o 2 preenchendo as lacunas, o 3 montando o bloco do 0.2 que você vai usar na sexta | 11 | `just professor fechar b-aprender MINUTOS` |
+| 6 | Instale o Anki e ligue o FSRS; exercícios N1 a N3 sem consulta; confira no gabarito; cartões do resumo | 9, 10, 12 a 14 | cada erro: `just erro`; travou na instalação: `just atrito`; `just professor fechar b-aprender MINUTOS` |
+| 7 (terça) | Akita #76 e #65; compare com as seções 1 e 6 e escreva a nota de 5 frases | 1, 6 e 16 | `just professor fechar b-aprender MINUTOS` |
+| Fim | Fechar o assunto: ficha e colheita (fim da seção 15) | 15 | `just ficha 0.1` e `just colher 0.1` |
 
-Cada bloco termina com o protocolo de fim de bloco (seção 9). O N4 corre em paralelo durante 2 semanas.
+O protocolo de fim de bloco está na seção 9. O N4 corre em paralelo durante 2 semanas.
+
+### Como fazer cada bloco (sempre igual)
+
+1. **Antes (1 min):** celular fora do alcance, uma aba só, timer de 25 minutos à vista. Escreva no caderno, em uma linha, o que o bloco tem que resolver (a coluna "O que fazer").
+2. **Durante (20 min):** antes de ler cada seção, transforme o título dela em pergunta e tente responder de cabeça por 30 segundos; só então leia. Código e exercício: primeiro tente, depois confira.
+3. **Fechar (4 min):** o protocolo de fim de bloco do 0.1. Feche o arquivo, reconstrua de cabeça o que o bloco resolveu, explique em 3 a 5 frases no caderno, faça de 1 a 3 cartões que pedem para usar.
+4. **Registrar (1 min):** o comando da última coluna. Os registros são o que deixa o setup trabalhar por você: revisões, provas, aulas e material das ofertas saem deles.
+
+Se o timer tocar no meio de uma seção, pare mesmo assim e feche o bloco. O próximo bloco começa por ela.
 
 ## 0. Antes de começar: diagnóstico
 
-Responda sem consulta, em 3 minutos:
+O diagnóstico faz três coisas ao mesmo tempo: decide se você precisa do apoio deste arquivo, mostra onde está o erro mais perigoso (o que você tem certeza e está errado) e já ensina, porque tentar responder antes de estudar melhora o aprendizado mesmo quando você erra (o *efeito do pré-teste*: Richland, Kornell e Kao 2009).
+
+**Como fazer, passo a passo:**
+1. **Preparar (1 min):** caderno, caneta e um timer de 3 minutos. Role este arquivo só até esta seção: não leia mais nada antes.
+2. **Responder (3 min):** sem consulta e sem IA. Escreva a resposta completa, com uma frase de porquê; "sim" ou "não" sozinho não vale.
+3. **Dar a certeza, antes de conferir:** ao lado de cada resposta, escreva **1** (chute), **2** (acho) ou **3** (certeza).
+4. **Parar no timer:** o que ficou em branco conta como errado no chute (`x1`).
+5. **Conferir:** abra o gabarito (seção 13) e marque **c** (certo) ou **x** (errado) em cada uma. Resposta pela metade é **x**.
+6. **Registrar:** uma letra e um número por pergunta, na ordem: `just diag 0.1 c3 x2 c1 --min 3`.
+7. **Seguir a decisão que o comando der:**
+   - **Modo rápido** (todas certas, com certeza 2 ou 3): leia rápido as seções 3.1 e 3.2 e vá direto para os exercícios N3.
+   - **Roteiro inteiro:** qualquer erro, ou qualquer acerto no chute. Acertar no chute é não saber.
+   - **Errou com certeza 3:** leia agora a resposta comentada dessa pergunta e anote com `just erro`. É o erro que mais atrapalha se ficar, e também o que você mais aprende ao corrigir: erros cometidos com muita certeza são corrigidos com mais facilidade depois do retorno (o *efeito de hipercorreção*: Butterfield e Metcalfe 2001).
+
+**As perguntas:**
 1. Dois grupos estudam o mesmo texto: um relê várias vezes, o outro lê e depois tenta lembrar sem olhar. Qual lembra mais **uma semana depois**?
 2. Você quer lembrar um assunto daqui a **um ano**. É melhor revisar com intervalos de um dia ou de algumas semanas?
 3. Existe boa evidência de que ensinar no "estilo de aprendizagem" da pessoa (visual, auditivo, cinestésico) melhora o aprendizado?
 
-Respostas na seção 13. **Acertou as 3?** Leia rápido as seções 3.1 e 3.2 e vá direto para os exercícios N3. **Errou alguma?** Siga o roteiro inteiro.
 
 ## 1. Por que isso existe (o problema e a história)
 
@@ -334,8 +358,26 @@ Primeiro sem IA e sem olhar o gabarito.
 - **Cada erro nos exercícios:** `just erro 0.1 "achei que reler funcionava" --certo "testar-se; reler só dá familiaridade"`
 - **Algo do setup travou ou foi manual** (por exemplo, ligar o FSRS): `just atrito "..." --area estudo`
 - **Terça do Akita:** `just professor fechar b-aprender MINUTOS` e a nota de 5 frases comparando os episódios com as seções 1 e 6.
-- **Fim do assunto:** ficha dupla (a aula de 15 minutos do N4) e registro de entrevista.
 - **Anki:** um cartão por item da seção 14, com as suas palavras, pedindo para usar.
+
+### Fechar o assunto: ficha e colheita (o estudo vira aula e material de renda)
+
+Faça depois do último bloco, num bloco próprio de 25 a 50 minutos. É o que transforma o seu estudo em material sem estudar duas vezes.
+
+1. **Criar a ficha:** `just ficha 0.1`. Ela abre no vault, em `09-material-producao-simultanea/fichas/`.
+2. **Preencher sem abrir este arquivo:** escrever de cabeça é a última recuperação do assunto. Se travar numa parte, essa parte volta para o caderno de erros, não para a ficha.
+   - **Explicação:** o que é, por que existe e como funciona, do jeito que você explicaria a um aluno do 1º ano. Vai para o livro, o minicurso, a aula particular e os posts.
+   - **Exemplo resolvido:** um exemplo seu, passo a passo, com o porquê de cada passo.
+   - **Exercícios:** no mínimo 3, em linhas `| N2 | pergunta | resposta |`, com perguntas novas suas (por exemplo, uma atividade de estudo para o aluno classificar). Vão para o AM Mentor, o baralho do Anki e o banco de questões.
+   - **Aula:** uma aula de 50 minutos ("como estudar de verdade": a do N4 serve, com o resultado do seu experimento): objetivo, abertura (5 min), explicação (15), prática (20) e verificação (10). Vai para Introdução ao Pensamento Computacional e Carreira e Gestão do Tempo no `ensino-ti`. Nada de nome, nota ou dado de aluno.
+   - **Registro de entrevista** e, se tiver, **Ideias** de produto ou conteúdo.
+3. **Ensaiar:** `just colher 0.1 --seco`. Mostra o que vai para onde, sem escrever nada. Se faltar algo, o comando lista o quê.
+4. **Colher:** `just colher 0.1`. Entrega a explicação ao pipeline de conteúdo, os exercícios ao banco e ao Anki, e o plano de aula aos componentes do `ensino-ti`.
+5. **Conferir os destinos:**
+   - **Anki:** Arquivo → Importar → `~/AMtech/banco/anki/0.1.tsv`.
+   - **ensino-ti:** revise os planos de aula novos e faça o commit lá.
+   - **Fila de conteúdo:** aprove ou recuse as peças que o pipeline gerar (`just fila`).
+6. **Depois de dar a aula de verdade (N4):** `just professor ensinei b-aprender`.
 
 ## 16. Fontes (na ordem de uso)
 
@@ -349,6 +391,7 @@ Primeiro sem IA e sem olhar o gabarito.
    - Macnamara, Hambrick e Oswald (2014). *Deliberate Practice and Performance in Music, Games, Sports, Education, and Professions: A Meta-Analysis.* Psychological Science, 25(8), 1608–1618.
    - Pashler, McDaniel, Rohrer e Bjork (2008). *Learning Styles: Concepts and Evidence.* Psychological Science in the Public Interest, 9(3), 105–119.
    - Diekelmann e Born (2010). *The memory function of sleep.* Nature Reviews Neuroscience, 11, 114–126.
+   - Richland, Kornell e Kao (2009). *The pretesting effect: Do unsuccessful retrieval attempts enhance learning?* Journal of Experimental Psychology: Applied, 15(3), 243–257. · Butterfield e Metcalfe (2001). *Errors committed with high confidence are hypercorrected.* Journal of Experimental Psychology: Learning, Memory, and Cognition, 27(6), 1491–1494.
 2. **Ferramenta:** [Manual do Anki: algoritmos SM-2 e FSRS](https://faqs.ankiweb.net/what-spaced-repetition-algorithm)
 3. **Akita** (conferidos pelas transcrições publicadas no site):
    - [#76 Guia definitivo de aprendendo a aprender](https://akitaonrails.com/2020/04/01/akitando-76-guia-definitivo-de-aprendendo-a-aprender-a-maior-bronca-da-sua-vida-rated-r/)

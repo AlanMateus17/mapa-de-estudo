@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-17 (6)
+
+### Alterado
+- 0.1 e 0.2: diagnóstico em 7 passos (responder com porquê, dar a certeza de 1 a 3 antes de conferir, `just diag`, seguir a decisão), com as fontes do pré-teste (Richland, Kornell e Kao 2009) e da hipercorreção (Butterfield e Metcalfe 2001).
+- 0.1 e 0.2: roteiro com a coluna "Ao terminar, registre" (o comando do setup de cada bloco) e "Como fazer cada bloco" (antes, durante, fechar, registrar).
+- 0.1 e 0.2: "Fechar o assunto" com `just ficha` e `just colher`, que levam o estudo para os planos de aula do `ensino-ti`, o pipeline de conteúdo, o banco de exercícios e o Anki.
+- Modelo atualizado com as mesmas regras.
+
 ## 2026-11-17 (5)
 
 ### Alterado
