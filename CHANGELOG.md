@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-17 (5)
+
+### Alterado
+- 0.1 *Aprender a aprender* no modelo v2: roteiro em 7 blocos, diagnóstico, checklist de conceitos, exemplos com retirada de apoio (montar um bloco de estudo, cartão ruim e cartão bom), exercícios N1–N4 com gabarito comentado, resumo de uma tela e registros no setup.
+- Akita #76 e #65 conferidos pelas transcrições publicadas no site dele; nova seção sobre onde a pesquisa concorda e onde discorda dele.
+- Entram as fontes primárias de exemplos resolvidos e retirada de apoio (Sweller e Cooper 1985; Renkl et al. 2002; Kalyuga et al. 2003).
+- Saem as referências aos episódios #63 e #119, que não foram conferidos.
+
 ## 2026-11-17 (4)
 
 ### Alterado

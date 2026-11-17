@@ -6,6 +6,7 @@ nivel-alvo: N3 (usar o método sem consulta e saber por que cada parte existe) �
 quando: M1, semana 1 (antes de tudo)
 professor: b-aprender (Akita #76 e #65, terça)
 prereq: []
+livro: nenhum obrigatório · para ir além, Make It Stick (Brown, Roediger e McDaniel)
 status: a-estudar
 verificado-em: 2026-11-17
 versoes: [Anki 23.10 ou mais novo (FSRS)]
@@ -18,10 +19,10 @@ fontes-conferidas:
   - Macnamara, Hambrick e Oswald 2014, Psychological Science 25(8)
   - Pashler et al. 2008, Psychological Science in the Public Interest 9(3)
   - Diekelmann e Born 2010, Nature Reviews Neuroscience 11
+  - Sweller e Cooper 1985, Cognition and Instruction 2; Renkl, Atkinson, Maier e Staley 2002, Journal of Experimental Education 70(4); Kalyuga, Ayres, Chandler e Sweller 2003, Educational Psychologist 38
   - Manual do Anki (algoritmos SM-2 e FSRS)
-pendente:
-  - Assistir e conferir o conteúdo dos episódios #76 e #65 do Akita (só os resumos do site dele foram conferidos)
-  - Conferir a fonte primária de "exemplos resolvidos" (Sweller) antes de citar número
+  - Akita #76 e #65, pelas transcrições completas publicadas no site dele (não pelo vídeo)
+pendente: []
 substitui: metodo-de-estudo.md do vault do autor (referência histórica)
 atualizado: 2026-11-17
 ---
@@ -39,7 +40,32 @@ atualizado: 2026-11-17
 
 ---
 
-## 1. Por que isso existe (o problema)
+## Roteiro (blocos de 25 minutos)
+
+Este é o único assunto que vem **antes de tudo**: os outros usam o protocolo de fim de bloco daqui. Faça os blocos 1 a 6 antes do primeiro assunto da Etapa 0; o bloco 7 é a terça do Akita.
+
+| Bloco | O que fazer | Seções |
+|---|---|---|
+| 1 | Diagnóstico. Por que isso existe e o que é | 0, 1 e 2 |
+| 2 | Como funciona por baixo; checklist de conceitos | 3 e 4 |
+| 3 | As técnicas e a evidência de cada uma; o que não funciona | 3.1 |
+| 4 | Estudar com TDAH; qualidades, defeitos e erros comuns | 3.2, 5 a 8 |
+| 5 | Exemplos com retirada de apoio (planejar um bloco e fazer cartões) | 11 |
+| 6 | Setup e mercado; exercícios N1 a N3; confira no gabarito; ligue o FSRS; resumo e registros | 9, 10, 12 a 15 |
+| 7 (terça) | Akita #76 e #65; compare com as seções 1 e 6 e escreva a nota de 5 frases | 1, 6 e 16 |
+
+Cada bloco termina com o protocolo de fim de bloco (seção 9). O N4 corre em paralelo durante 2 semanas.
+
+## 0. Antes de começar: diagnóstico
+
+Responda sem consulta, em 3 minutos:
+1. Dois grupos estudam o mesmo texto: um relê várias vezes, o outro lê e depois tenta lembrar sem olhar. Qual lembra mais **uma semana depois**?
+2. Você quer lembrar um assunto daqui a **um ano**. É melhor revisar com intervalos de um dia ou de algumas semanas?
+3. Existe boa evidência de que ensinar no "estilo de aprendizagem" da pessoa (visual, auditivo, cinestésico) melhora o aprendizado?
+
+Respostas na seção 13. **Acertou as 3?** Leia rápido as seções 3.1 e 3.2 e vá direto para os exercícios N3. **Errou alguma?** Siga o roteiro inteiro.
+
+## 1. Por que isso existe (o problema e a história)
 
 - **Esquecer é o normal.** Desde Ebbinghaus (1885) se sabe que a memória se perde rápido logo depois de aprender e mais devagar com o tempo. Quem não revisa perde a maior parte do que viu.
 - **A ilusão de que reler funciona.** Reler e grifar dão sensação de domínio porque o texto parece familiar. Mas reconhecer não é lembrar. É por isso que alguém "estuda" horas e trava na prova, ou no código.
@@ -48,7 +74,15 @@ atualizado: 2026-11-17
   - **Utilidade moderada:** interrogação elaborativa (perguntar "por quê?"), autoexplicação e prática intercalada.
   - **Utilidade baixa:** resumir, grifar ou sublinhar, reler, mnemônicos de palavra-chave e imagens mentais para texto.
   - As técnicas mais usadas pelos estudantes estão justamente entre as de utilidade baixa.
-- **O que o Akita diz (resumo publicado no próprio site dele, sobre o episódio #65):** prática deliberada e fundamentos; cursos e livros ajudam, mas não substituem copiar, quebrar e ler código; algoritmos e estruturas de dados vêm antes de padrões de projeto. O episódio #76 (Aprendendo a aprender) **ainda precisa ser assistido e conferido** antes de entrar aqui com detalhe.
+- **O que o Akita diz** (conferido nas transcrições dos episódios #76 e #65, publicadas no site dele):
+  - Comece pelos **fundamentos**, com problemas reais, autonomia e muita prática; o que ele chama de "aprender a se virar".
+  - **Frustração faz parte**: tratar o passo que deu errado como quebra-cabeça para investigar, e não esperar que o professor resolva.
+  - **Tutoriais ensinam o "o quê", raramente o "porquê"**; seguir passos dá sensação boa sem construir habilidade.
+  - **Leia a documentação oficial primeiro**; curso serve de introdução rápida, não como formação inteira. Aprenda **inglês**, porque o conteúdo de tecnologia sai primeiro em inglês.
+  - **Algoritmos e estruturas de dados** são a base; padrões de projeto servem mais tarde, quando você já reconhece os padrões que usa.
+  - Para iniciantes: **muito código** (copiar, quebrar, combinar, com Git), notificações desligadas, e projeto próprio só depois.
+  - O modelo que ele usa de exemplo é a **École 42** (sem aulas, aprendizado por problemas e colegas), a mesma escola cujo currículo está no seu horizonte.
+  - **Onde a pesquisa concorda e onde discorda dele:** ver a seção 6.
 
 ## 2. O que é
 
@@ -71,30 +105,32 @@ Memória tem três momentos:
 - **Testar-se** força a recuperação, e recuperar é treinar o caminho até a memória. Reler não exige isso.
 - **Espaçar** deixa você esquecer um pouco antes de revisar. A revisão que custa um pouco fortalece mais do que a revisão fácil.
 - **Intercalar** obriga a escolher qual estratégia usar em cada problema. No estudo em bloco (10 problemas iguais seguidos), você já sabe a estratégia antes de ler o problema, e não treina a escolha. É exatamente a escolha que a prova e o trabalho cobram.
+- **Exemplo resolvido primeiro, apoio retirado depois.** Quem está começando ainda não tem na cabeça os esquemas do assunto; resolver tudo sozinho gasta a atenção procurando caminho, não aprendendo. Sweller e Cooper (1985) mostraram que estudar exemplos resolvidos pode ensinar mais do que resolver problemas no início. Mas o apoio precisa sair aos poucos: Renkl, Atkinson e colegas (2002) mostraram que **retirar passos do exemplo gradualmente** (resolvido → com lacunas → sozinho) ajuda a transição. E o **efeito de inversão da experiência** (Kalyuga e colegas, 2003) mostra que, para quem já domina, o exemplo detalhado passa a atrapalhar. É por isso que cada arquivo tem diagnóstico: quem já sabe pula o apoio.
 - **Ensinar** obriga a organizar o assunto: separar o principal, montar uma sequência, achar os buracos.
 - **Dormir** consolida: a revisão de Diekelmann e Born (2010) mostra que o sono favorece a consolidação tanto de memórias de fatos quanto de habilidades.
 
-## 4. As técnicas, com o nível de evidência de cada uma
+### 3.1 As técnicas, com o nível de evidência de cada uma
 
 | Técnica | O que fazer | Evidência | No seu sistema |
 |---|---|---|---|
 | **Prática de recuperação** | Fechar o material e reconstruir de cabeça; cartões; exercícios sem consulta | **Forte.** Utilidade alta (Dunlosky 2013); Roediger e Karpicke 2006 | Passo 2 do protocolo; prova do Professor; Anki |
 | **Prática espaçada** | Revisar o mesmo conteúdo em dias diferentes | **Forte.** Utilidade alta (Dunlosky 2013); Cepeda et al. 2008 | Revisões do Professor; Anki |
 | **Intervalo ideal** | O melhor intervalo depende de **quanto tempo você quer lembrar** | Cepeda et al. 2008: cerca de 20% do prazo para prazos de semanas, caindo para cerca de 5% quando o prazo é de um ano | Os intervalos 1/3/7/21/60/120 do Professor são uma **regra prática**, não um número da pesquisa; no Anki, ligue o **FSRS**, que ajusta o intervalo carta por carta |
-| **Prática intercalada** | Depois de conhecer cada tipo de problema, misturar os tipos na mesma sessão | **Boa em matemática e em habilidades motoras.** Rohrer e Taylor 2007; Rohrer, Dedrick e Burgess 2014 (alunos do 7º ano: 72% contra 38% num teste surpresa duas semanas depois). Utilidade moderada em Dunlosky 2013 | A semana do Professor alterna trilhas; nos exercícios, misture os 3 exercícios de lógica depois de conhecer cada um |
+| **Prática intercalada** | Depois de conhecer cada tipo de problema, misturar os tipos na mesma sessão | **Boa em matemática e em habilidades motoras.** Rohrer e Taylor 2007; Rohrer, Dedrick e Burgess 2014 (alunos do 7º ano: 72% contra 38% num teste surpresa duas semanas depois). Utilidade moderada em Dunlosky 2013 | A semana do Professor alterna trilhas; nos exercícios, misture os tipos depois de conhecer cada um |
+| **Exemplos com retirada de apoio** | Estudar um exemplo resolvido, completar um com lacunas, resolver um sozinho | **Boa para iniciantes** (Sweller e Cooper 1985; Renkl et al. 2002); **atrapalha quem já domina** (Kalyuga et al. 2003) | Seção 11 de todo arquivo; o diagnóstico da seção 0 decide se você pula |
 | **Autoexplicação e "por quê?"** | Explicar para si cada passo e perguntar por que é assim | **Moderada** (Dunlosky 2013) | Passo 3 do protocolo |
 | **Preparar-se para ensinar e ensinar** | Estudar como quem vai dar aula; depois dar a aula | **Boa.** Nestojko et al. 2014: quem esperava ensinar lembrou mais e organizou melhor. Fiorella e Mayer 2014: preparar-se para ensinar ajuda no curto prazo; preparar **e** ensinar de verdade deu o melhor resultado no longo prazo | Ficha dupla; nível N4 só conta com aula dada (escola, vídeo, aula particular) |
-| **Prática deliberada** | Treinar o que você ainda erra, com retorno, em vez de repetir o que já sabe | **Importante, mas menos do que se dizia.** Macnamara et al. 2014 (88 estudos): a prática explicou cerca de 26% das diferenças de desempenho em jogos, 21% em música e 18% em esportes. Ericsson rebateu com outra análise, e o debate continua | A correção do Professor lista os pontos fracos; o próximo bloco começa por eles |
+| **Prática deliberada** | Treinar o que você ainda erra, com retorno, em vez de repetir o que já sabe | **Importante, mas menos do que se dizia.** Macnamara et al. 2014 (88 estudos): a prática explicou cerca de 26% das diferenças de desempenho em jogos, 21% em música e 18% em esportes. Ericsson rebateu com outra análise, e o debate continua | `just erros` lista os seus erros; o próximo bloco começa por eles |
 | **Sono** | Dormir depois de estudar; não trocar sono por mais estudo | **Forte** como mecanismo de consolidação (Diekelmann e Born 2010) | "Dormir" está na lista do que nunca pausa |
 
 **O que tem pouca ou nenhuma evidência (não gaste tempo):**
 - **Reler, grifar e resumir** como estratégia principal: utilidade baixa em Dunlosky 2013. Resumir pode servir para organizar, mas não substitui testar-se.
 - **"Estilos de aprendizagem"** (visual, auditivo, cinestésico): Pashler et al. 2008 não encontraram evidência de que ensinar no "estilo" da pessoa melhore o aprendizado. Use o formato que combina com o **conteúdo** (diagrama para rede, código para algoritmo), não com um "tipo de aluno".
 - **A "regra 20/80"** é uma **regra prática útil para priorizar**, não um resultado científico. Use para decidir a ordem, não como verdade.
-- **Pomodoro** (blocos de 25 minutos) não tem evidência forte como técnica de aprendizado. No seu caso, o valor dele é outro: deixar o tempo visível (ver a seção 5).
-- **"Técnica Feynman"** é um nome popular, não um método testado com esse nome. O que tem evidência é o que está por trás dela: autoexplicação e preparar-se para ensinar (linha acima).
+- **Pomodoro** (blocos de 25 minutos) não tem evidência forte como técnica de aprendizado. No seu caso, o valor dele é outro: deixar o tempo visível (ver a seção 3.2).
+- **"Técnica Feynman"** é um nome popular, não um método testado com esse nome. O que tem evidência é o que está por trás dela: autoexplicação e preparar-se para ensinar.
 
-## 5. Estudar com TDAH
+### 3.2 Estudar com TDAH
 
 > Isto é sobre **organizar o estudo**, não sobre tratamento. Diagnóstico, remédio e terapia são com o seu médico ou psicólogo.
 
@@ -102,23 +138,38 @@ O princípio mais citado de Russell Barkley, pesquisador de TDAH em adultos: **o
 
 | Princípio | O que fazer no seu estudo |
 |---|---|
-| **Informação fora da cabeça** | Uma lista do dia diz exatamente o que fazer; você não decide na hora. Uma porta só (no setup do autor, `just professor hoje`) |
+| **Informação fora da cabeça** | Uma lista do dia diz exatamente o que fazer; você não decide na hora. Uma porta só (no setup do autor, `just professor hoje`) e o roteiro no topo de cada arquivo |
 | **Tempo visível** | Timer à vista em cada bloco (é aqui que o Pomodoro ajuda); o tempo real anotado no fim |
-| **Começo pequeno** | O primeiro passo do bloco é tão pequeno que não dá para adiar: "abrir o arquivo e ler a seção 1" |
+| **Começo pequeno** | O primeiro passo do bloco é tão pequeno que não dá para adiar: "abrir o arquivo e responder o diagnóstico" |
 | **Recompensa perto** | Marcar `[x]` na lista do dia logo ao terminar; progresso visível |
-| **Ambiente sem atalho para distração** | Celular fora do alcance no bloco âncora; uma aba só |
+| **Ambiente sem atalho para distração** | Celular fora do alcance no bloco; uma aba só; notificações desligadas (o Akita dá o mesmo conselho no #65) |
 | **Estudar acompanhado** (*body doubling*) | Muitos adultos com TDAH relatam que estudar com alguém presente, ou numa chamada de vídeo em silêncio, ajuda. A evidência é de relato, não de estudo controlado: teste e meça |
 
 **Atenção com a dificuldade desejável:** testar-se, espaçar e intercalar dão sensação de que você está indo **pior**. Com TDAH, isso pode virar desânimo e abandono. A defesa é medir: o tempo real anotado e a nota da prova do Professor mostram o progresso que a sensação esconde.
 
-## 6. Qualidades
+## 4. Conceitos que você precisa dominar
+
+Cada item vira um cartão do Anki, com as suas palavras:
+
+- [ ] Codificar, consolidar e recuperar: o que acontece em cada um e onde você age
+- [ ] Por que testar-se vence reler (o estudo de 2006, os dois momentos de medida)
+- [ ] Dificuldade desejável: por que a técnica boa parece pior na hora
+- [ ] O intervalo ideal depende de quanto tempo você quer lembrar
+- [ ] Intercalar só depois de conhecer cada tipo
+- [ ] Exemplo resolvido → com lacunas → sozinho, e por que o diagnóstico vem antes
+- [ ] Preparar-se para ensinar ajuda; preparar **e** ensinar ajuda mais
+- [ ] O que não tem evidência: estilos de aprendizagem, reler como estratégia principal
+- [ ] O princípio do TDAH: ajuda no ponto de execução, informação fora da cabeça
+- [ ] Os 6 passos do protocolo de fim de bloco
+
+## 5. Qualidades
 
 - **Funciona para qualquer assunto:** código, matemática, inglês, finanças.
 - **É barato:** caderno, cartões e um timer.
 - **Rende em dobro para quem ensina:** o mesmo estudo vira aula, e a aula fixa o estudo.
 - **Evita o pior desperdício:** horas de estudo que não ficam.
 
-## 7. Defeitos, limites e críticas
+## 6. Defeitos, limites e críticas
 
 - **A maior parte das pesquisas é com estudantes e testes de memória de curto prazo** (dias a semanas). Para habilidades complexas, como programar um sistema, a evidência é mais indireta.
 - **Os efeitos variam** com o tipo de material, o tempo até a prova e a pessoa. Nenhum número vale para tudo.
@@ -126,15 +177,21 @@ O princípio mais citado de Russell Barkley, pesquisador de TDAH em adultos: **o
 - **As técnicas boas parecem piores na hora.** Por isso as pessoas abandonam.
 - **Sono curto atrapalha a consolidação.** Rotinas com trabalho até tarde e despertar cedo reduzem o sono, e o método não compensa isso. É um limite real de qualquer plano de estudo.
 - **A pesquisa sobre prática deliberada está em debate:** quanto ela explica do desempenho depende de como se mede.
+- **Onde o Akita e a pesquisa discordam:**
+  - **"Se vire sem instrução."** Para quem já tem base, concorda com a pesquisa (inversão da experiência). Para quem está começando um assunto, a pesquisa de exemplos resolvidos mostra que instrução bem montada ensina mais rápido. Por isso este mapa usa as duas coisas: exemplo resolvido no começo, autonomia no fim (o N4 e o código do seu sistema).
+  - **"Se nada dói, você não está se esforçando."** A dificuldade desejável é real, mas nem toda dor é útil. A frustração de faltar pré-requisito é desperdício, e é exatamente o que a ordem do MAPA evita.
+  - **"Copie muito código."** Copiar sozinho é passivo como reler. O que dá resultado é a parte que ele também pede: **quebrar e combinar**, e explicar por que funciona.
+  - **Certificados.** Ele é cético: diz que certificado muitas vezes prova presença e pagamento, não aprendizado. No seu plano, as certificações de segurança entram como filtro de currículo, nunca como prova de que você aprendeu. A prova é o N4.
 
-## 8. Quando usar e quando não usar
+## 7. Quando usar e quando não usar
 
 - **Sempre:** testar-se, espaçar, dormir.
+- **Exemplo resolvido:** no começo de cada assunto novo. Pule se acertou o diagnóstico.
 - **Intercalar:** depois da 1ª passada de cada tipo de problema.
 - **Ensinar:** em todo assunto de nível N4, e sempre que puder nos de N3.
 - **Calibrar a profundidade antes:** cada assunto do MAPA tem nível-alvo. Ir mais fundo do que o nível pede é atraso, não virtude.
 
-## 9. Erros comuns
+## 8. Erros comuns
 
 - Medir o estudo por horas ou páginas, e não pelo que você consegue fazer sem consulta.
 - Ler a solução antes de tentar.
@@ -144,61 +201,165 @@ O princípio mais citado de Russell Barkley, pesquisador de TDAH em adultos: **o
 - Cortar sono para estudar mais.
 - Trocar de método toda semana em vez de medir o atual por um mês.
 
-## 10. No seu setup e no AM Gestão
+## 9. No seu setup e no AM Gestão
 
 - **Professor (`just professor hoje`):** decide o que estudar, aplica revisão espaçada, prova sem consulta (abaixo de 80, a revisão volta no dia seguinte) e guarda o tempo real com `just professor fechar ID MINUTOS`.
 - **Anki:** desde a versão 23.10 o Anki tem dois algoritmos, o SM-2 e o **FSRS**. O FSRS é opcional e precisa ser ligado nas opções do baralho. **Ligue o FSRS** e deixe o Anki decidir os intervalos dos cartões.
-- **Protocolo de fim de bloco:**
+- **Protocolo de fim de bloco** (todos os outros arquivos usam este):
   1. Feche o material.
   2. Reconstrua de cabeça o que o bloco resolveu e por quê (**recuperação**).
   3. Explique em 3 a 5 frases sem jargão (**autoexplicação**).
   4. Faça de 1 a 3 cartões que pedem para usar, não para reconhecer.
   5. Anote o tempo real.
   6. Só então avance.
-- **O ciclo de um assunto, corrigido para a ordem nova:**
+- **O ciclo de um assunto:**
   1. Papel (livro, desenho, conta à mão).
   2. Código na linguagem da etapa: TypeScript desde a Etapa 2; Go nas ferramentas; Python só a partir da Etapa 7.
   3. Sistema real (AM Gestão, setup, site), quando o assunto tiver ligação real.
   4. Ficha de aula (ficha dupla) e registro de entrevista.
 - **Regra da IA no estudo (do seu plano):** aprendizado novo é **sem IA**; a IA corrige depois, como tutor que pergunta em vez de dar a resposta. Conteúdo de curso pago e página de livro nunca vão para a IA.
 
-## 11. O que o mercado cobra
+## 10. O que o mercado cobra
 
-Nenhuma vaga pede "técnicas de estudo", mas todas cobram o resultado delas: **aprender rápido e sozinho**. Ferramentas mudam a cada poucos anos; quem sabe estudar troca de ferramenta sem recomeçar do zero. Em 2026, com a IA escrevendo boa parte do código, os recrutadores eliminam quem usa IA para gerar código que não consegue explicar. Isso é, na prática, um teste de aprendizado de verdade.
+Nenhuma vaga pede "técnicas de estudo", mas todas cobram o resultado delas: **aprender rápido e sozinho**. Ferramentas mudam a cada poucos anos; quem sabe estudar troca de ferramenta sem recomeçar do zero. Em 2026, com a IA escrevendo boa parte do código, quem usa IA para gerar código que não consegue explicar é eliminado na entrevista técnica. Isso é, na prática, um teste de aprendizado de verdade.
 
-Em entrevista, aparece como: "como você aprende uma tecnologia nova?", "conte de algo difícil que você aprendeu sozinho". A sua resposta pode ser este método, com números do seu próprio registro.
+- **Júnior:** aprende uma ferramenta nova lendo a documentação, sem precisar de curso para tudo.
+- **Pleno:** aprende um domínio de negócio novo (fiscal, financeiro) e ensina o time.
+- **Sênior:** decide o que o time precisa aprender, e em que ordem.
+- **Perguntas de entrevista:** "como você aprende uma tecnologia nova?", "conte de algo difícil que você aprendeu sozinho". A sua resposta pode ser este método, com números do seu próprio registro.
 
-## 12. Exercícios
+## 11. Exemplos com retirada de apoio
 
-- **N1 (reconhecer):** classifique 10 atividades de estudo (reler o capítulo, fazer cartões, grifar, resolver sem consulta, assistir à aula 2x, explicar para um aluno, resumir, misturar exercícios, estudar 4 horas seguidas na véspera, dormir depois de estudar) em evidência forte, moderada ou fraca, e justifique.
-- **N2 (aplicar):** instale o Anki, ligue o FSRS e crie 10 cartões da Matemática Cap. 1 (0.2) que peçam para **usar**: montar uma tabela-verdade, negar uma proposição.
-- **N3 (diagnosticar e corrigir):** pegue uma sessão de estudo real sua desta semana. Liste o que foi recuperação, o que foi releitura e o que foi distração. Reescreva a mesma sessão com o protocolo de fim de bloco.
+### Exemplo 1, resolvido: montar um bloco de 25 minutos
+
+**Assunto:** De Morgan (do 0.2). **Objetivo do bloco:** negar expressões com "e" e "ou" sem consulta.
+
+| Minuto | O que fazer | Por quê |
+|---|---|---|
+| 0–2 | Responder sem olhar: "qual é a negação de 'p e q'?" | Diagnóstico: mostra o que você já sabe e o que falta |
+| 2–10 | Ler o exemplo resolvido do 0.2 e explicar cada passo em voz alta | Exemplo resolvido para quem ainda não domina; autoexplicação |
+| 10–18 | Fazer o exemplo com lacunas e depois o sozinho | Retirada de apoio |
+| 18–23 | Fechar o arquivo e reconstruir as duas leis de cabeça; escrever 3 frases | Recuperação e autoexplicação |
+| 23–25 | 2 cartões ("negue: 'chove e faz frio'") e anotar o tempo real | Cartão que pede para usar; tempo visível |
+
+### Exemplo 2, com lacunas: montar o bloco de binário (0.4)
+
+| Minuto | O que fazer | Por quê |
+|---|---|---|
+| 0–2 | Converter 13 para binário sem olhar | ________ |
+| 2–10 | ________ | Exemplo resolvido para quem ainda não domina |
+| 10–18 | Converter 5 números sozinho, do mais fácil ao mais difícil | ________ |
+| 18–23 | ________ | Recuperação e autoexplicação |
+| 23–25 | ________ | Cartão que pede para usar; tempo visível |
+
+### Exemplo 3, sozinho
+
+Monte o bloco do seu próximo assunto da Etapa 0, no mesmo formato, **antes** de abrir o arquivo dele.
+
+### Exemplo extra: do cartão ruim ao cartão bom
+
+| Cartão ruim (reconhecer) | Cartão bom (usar) |
+|---|---|
+| O que é a contrapositiva? | Escreva a contrapositiva de "se o pedido está pago, então ele é enviado" |
+| O que é FSRS? | Você quer que o Anki ajuste os intervalos sozinho. O que você liga, e onde? |
+| ________ | ________ (faça você, com um conceito da seção 4) |
+
+## 12. Exercícios N1–N4
+
+Primeiro sem IA e sem olhar o gabarito.
+
+- **N1 (reconhecer):** classifique 10 atividades de estudo em evidência forte, moderada ou fraca, e justifique: reler o capítulo; fazer cartões que pedem para usar; grifar; resolver exercícios sem consulta; assistir à aula de novo em 2x; explicar para um aluno; resumir; misturar exercícios de tipos que você já conhece; estudar 4 horas seguidas na véspera; dormir depois de estudar.
+- **N2 (aplicar):** instale o Anki, ligue o FSRS e crie 10 cartões do 0.2 que peçam para **usar**: montar uma tabela-verdade, negar uma proposição.
+- **N2 (calcular):** pela regra aproximada de Cepeda et al., qual intervalo entre as revisões serve para uma prova daqui a 30 dias? E para lembrar daqui a um ano?
+- **N3 (achar o erro):** este plano de estudo tem 4 erros. Ache e corrija: *"Vou estudar lógica sábado das 6h às 12h direto, relendo o capítulo três vezes e grifando o importante. No fim, assisto a um vídeo resumo e já faço os exercícios mais difíceis do livro misturados com os de conjuntos, que ainda não vi."*
+- **N3 (diagnosticar):** pegue uma sessão de estudo real sua desta semana. Liste o que foi recuperação, o que foi releitura e o que foi distração. Reescreva a mesma sessão com o protocolo de fim de bloco.
 - **N4 (experimento e aula):**
   - Por 2 semanas, estude metade dos tópicos da Etapa 0 só relendo e a outra metade testando-se. Faça um teste surpresa de cada metade 7 dias depois e compare as notas no seu registro.
   - Dê aos seus alunos uma aula de 15 minutos sobre como estudar, usando o resultado do experimento.
 
-## 13. Fontes (na ordem de uso)
+## 13. Gabarito comentado
+
+**Diagnóstico (seção 0):**
+1. Quem **se testou**. Cinco minutos depois, quem releu ia melhor; uma semana depois, o resultado inverte (Roediger e Karpicke 2006). Se você respondeu "quem releu", caiu exatamente na ilusão que este assunto existe para desfazer.
+2. **Algumas semanas.** O intervalo bom cresce com o prazo: para um ano, a regra aproximada de Cepeda et al. dá cerca de 5% do prazo, ou seja, perto de 2 a 3 semanas.
+3. **Não.** Pashler et al. 2008 não acharam evidência. O formato deve seguir o conteúdo, não o "tipo de aluno".
+
+**N1:**
+
+| Atividade | Evidência | Por quê |
+|---|---|---|
+| Reler o capítulo | Fraca | Dá familiaridade, não recuperação |
+| Cartões que pedem para usar | Forte | São prática de recuperação; espaçados pelo Anki |
+| Grifar | Fraca | Utilidade baixa em Dunlosky 2013 |
+| Resolver sem consulta | Forte | Recuperação, e mostra o que você não sabe |
+| Assistir à aula de novo em 2x | Fraca | Equivale a reler: o problema é ser passivo, não a velocidade |
+| Explicar para um aluno | Boa | Preparar e ensinar (Fiorella e Mayer 2014) |
+| Resumir | Fraca | Ajuda a organizar, mas não substitui testar-se |
+| Misturar exercícios de tipos conhecidos | Boa | Intercalação; a ressalva é "de tipos que você já conhece" |
+| 4 horas seguidas na véspera | Fraca | É o oposto de espaçar; funciona para a prova de amanhã e some depois |
+| Dormir depois de estudar | Forte | Consolidação (Diekelmann e Born 2010) |
+
+**Erro mais provável:** classificar "assistir de novo" como boa porque "é estudar". Ver de novo é reconhecer.
+
+**N2 (cartões):** confira cada cartão com uma pergunta: "dá para acertar só reconhecendo a resposta?" Se dá, reescreva pedindo para fazer algo. Exemplo bom: "construa a tabela-verdade de p → q".
+
+**N2 (calcular):** prova em 30 dias → cerca de 20% → **revisar a cada 6 dias, mais ou menos**. Um ano → cerca de 5% → **a cada 18 dias, mais ou menos**. São aproximações da pesquisa, não regras exatas; o FSRS faz esse ajuste carta por carta.
+
+**N3 (achar o erro):**
+1. **6 horas direto:** sem espaçamento e sem pausas; divida em blocos e espalhe pela semana.
+2. **Reler três vezes e grifar:** técnicas de utilidade baixa; troque por exemplo resolvido, lacunas e recuperação.
+3. **Vídeo resumo no fim:** mais uma revisão passiva; troque pelo protocolo de fim de bloco.
+4. **Misturar com conjuntos, que ainda não viu:** intercalar só depois de conhecer cada tipo. E começar pelos exercícios mais difíceis pula a retirada de apoio.
+
+**N3 (diagnosticar):** não tem resposta única. A sessão reescrita está certa se cada bloco termina com recuperação sem olhar, há pelo menos um cartão que pede para usar, e o tempo real está anotado.
+
+**N4:** o experimento só vale se as duas metades forem parecidas em dificuldade. Sorteie quais tópicos vão para cada metade, use o mesmo tipo de teste e anote as notas antes de olhar o resultado esperado. Se o resultado sair diferente do da pesquisa, anote mesmo assim: é o seu dado.
+
+## 14. Resumo de uma tela
+
+- **Aprender** = lembrar e usar sem consulta, dias ou meses depois.
+- **Codificar, consolidar, recuperar.** Você age em todos; recuperar é o que mais fortalece.
+- **Testar-se vence reler**, mas só aparece depois de dias (2006: 5 minutos contra 1 semana).
+- **Espaçar:** intervalo cresce com o prazo (cerca de 20% para semanas, cerca de 5% para um ano). FSRS ligado.
+- **Intercalar** só depois de conhecer cada tipo.
+- **Exemplo resolvido → com lacunas → sozinho.** Quem já domina pula (diagnóstico).
+- **Preparar e ensinar** é o melhor no longo prazo.
+- **Sem evidência:** estilos de aprendizagem, reler e grifar como estratégia principal.
+- **TDAH:** informação fora da cabeça, tempo visível, começo pequeno, recompensa perto.
+- **Protocolo:** fechar, reconstruir, explicar em 3 a 5 frases, 1 a 3 cartões, anotar o tempo, avançar.
+
+## 15. Registros no setup
+
+- **Leitura:** este assunto não tem livro obrigatório. Se ler o *Make It Stick*: `just livros ler LIVRO --trecho "Cap. N" --min MINUTOS --assunto 0.1 --nota "..."` (cadastre o livro na biblioteca antes).
+- **Cada erro nos exercícios:** `just erro 0.1 "achei que reler funcionava" --certo "testar-se; reler só dá familiaridade"`
+- **Algo do setup travou ou foi manual** (por exemplo, ligar o FSRS): `just atrito "..." --area estudo`
+- **Terça do Akita:** `just professor fechar b-aprender MINUTOS` e a nota de 5 frases comparando os episódios com as seções 1 e 6.
+- **Fim do assunto:** ficha dupla (a aula de 15 minutos do N4) e registro de entrevista.
+- **Anki:** um cartão por item da seção 14, com as suas palavras, pedindo para usar.
+
+## 16. Fontes (na ordem de uso)
 
 1. **Pesquisa (fontes primárias):**
    - Dunlosky, Rawson, Marsh, Nathan e Willingham (2013). *Improving Students' Learning With Effective Learning Techniques.* Psychological Science in the Public Interest, 14(1), 4–58. [Resumo da APS](https://www.psychologicalscience.org/news/releases/which-study-strategies-make-the-grade.html)
    - Roediger e Karpicke (2006). *Test-Enhanced Learning.* Psychological Science, 17(3), 249–255.
    - Cepeda, Vul, Rohrer, Wixted e Pashler (2008). *Spacing Effects in Learning: A Temporal Ridgeline of Optimal Retention.* Psychological Science, 19(11), 1095–1102. [Texto aberto](https://escholarship.org/uc/item/0kp5q19x)
    - Rohrer e Taylor (2007). *The shuffling of mathematics problems improves learning.* Instructional Science. · Rohrer, Dedrick e Burgess (2014). Psychonomic Bulletin & Review, 21(5), 1323–1330.
+   - Sweller e Cooper (1985). *The use of worked examples as a substitute for problem solving in learning algebra.* Cognition and Instruction, 2, 59–89. · Renkl, Atkinson, Maier e Staley (2002). *From example study to problem solving: Smooth transitions help learning.* Journal of Experimental Education, 70(4), 293–315. · Kalyuga, Ayres, Chandler e Sweller (2003). *The expertise reversal effect.* Educational Psychologist, 38, 23–31.
    - Nestojko, Bui, Kornell e Bjork (2014). *Expecting to teach enhances learning and organization of knowledge in free recall of text passages.* Memory & Cognition. · Fiorella e Mayer (2014). *Role of expectations and explanations in learning by teaching.* Contemporary Educational Psychology, 39(2), 75–85.
    - Macnamara, Hambrick e Oswald (2014). *Deliberate Practice and Performance in Music, Games, Sports, Education, and Professions: A Meta-Analysis.* Psychological Science, 25(8), 1608–1618.
    - Pashler, McDaniel, Rohrer e Bjork (2008). *Learning Styles: Concepts and Evidence.* Psychological Science in the Public Interest, 9(3), 105–119.
    - Diekelmann e Born (2010). *The memory function of sleep.* Nature Reviews Neuroscience, 11, 114–126.
 2. **Ferramenta:** [Manual do Anki: algoritmos SM-2 e FSRS](https://faqs.ankiweb.net/what-spaced-repetition-algorithm)
-3. **Akita:**
-   - [#76 Guia definitivo de aprendendo a aprender](https://akitaonrails.com/2020/04/01/akitando-76-guia-definitivo-de-aprendendo-a-aprender-a-maior-bronca-da-sua-vida-rated-r/) (**a conferir**)
-   - [#65 A dor de aprender](https://akitaonrails.com/2019/10/23/akitando-65-a-dor-de-aprender-que-cursos-livros/) (conferido só pelo resumo do site)
-   - [#63 Não terceirize suas decisões](https://akitaonrails.com/2019/10/09/akitando-63-nao-terceirize-suas-decisoes-a-licao-mais-importante-da-sua-vida/)
-   - [#119 Aprendizado na beira do caos](https://akitaonrails.com/2022/05/30/akitando-119-rant-aprendizado-na-beira-do-caos-rated-r/)
+3. **Akita** (conferidos pelas transcrições publicadas no site):
+   - [#76 Guia definitivo de aprendendo a aprender](https://akitaonrails.com/2020/04/01/akitando-76-guia-definitivo-de-aprendendo-a-aprender-a-maior-bronca-da-sua-vida-rated-r/)
+   - [#65 A dor de aprender](https://akitaonrails.com/2019/10/23/akitando-65-a-dor-de-aprender-que-cursos-livros/)
 4. **Livro para ir além:** *Make It Stick* (Brown, Roediger e McDaniel), escrito por dois dos pesquisadores citados acima.
 
-## 14. Como saber que dominou
+## 17. Como saber que dominou
 
+- [ ] Acerto o diagnóstico da seção 0 sem pensar.
 - [ ] Explico em 3 a 5 frases, sem jargão, por que testar-se vence reler (usando o estudo de 2006).
+- [ ] Monto um bloco de 25 minutos com retirada de apoio para um assunto novo, sem consultar este arquivo.
 - [ ] Sigo o protocolo de fim de bloco por 4 semanas sem consultar este arquivo.
 - [ ] O Anki está com o FSRS ligado e eu reviso todo dia.
 - [ ] Tenho o resultado do experimento do N4 anotado, com números.
