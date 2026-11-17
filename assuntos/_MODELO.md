@@ -1,19 +1,22 @@
 ---
 tags: [estudo, assunto, modelo]
 tipo: modelo
+versao: 2 (2026-11-17)
 ---
 
 # Modelo de arquivo de assunto
 
 > Todo arquivo segue o **protocolo de escrita** do [MAPA](../MAPA.md#como-cada-arquivo-é-escrito): fonte primária na versão atual, código executado, fatos conferidos, `verificado-em` preenchido.
 >
-> Copie este arquivo para `assuntos/<área>/<assunto>.md` e preencha. Um arquivo por assunto. Ele serve para três coisas ao mesmo tempo: **estudar**, **revisar** (Anki e provas) e **dar aula** (é a base da ficha dupla e do livro *Lógica e Máquina*).
+> Copie este arquivo para `assuntos/<área>/<assunto>.md` e preencha. Um arquivo por assunto. Ele serve para quatro coisas ao mesmo tempo: **estudar**, **revisar** (Anki e provas), **dar aula** (base da ficha dupla e do livro *Lógica e Máquina*) e **alimentar o setup** (registros de leitura, erros e atritos).
 
-## Como este modelo junta as três fontes
+## Como este modelo junta as fontes
 
-- **O jeito do Akita de aprender:** começar pelo **porquê** e pela **história** (nenhuma tecnologia surge do nada), descer até **como funciona por baixo**, fazer na mão antes de usar a ferramenta pronta, ler a fonte primária e não tratar linguagem ou framework como religião.
-- **O método do Professor (dev-setup):** 20/80 em duas passadas, recuperação ativa, exercícios N1–N4, protocolo de fim de bloco, ficha dupla e registro de entrevista.
+- **O jeito do Akita de aprender:** começar pelo **porquê** e pela **história**, descer até **como funciona por baixo**, fazer na mão antes de usar a ferramenta pronta, ler a fonte primária, não tratar linguagem como religião.
+- **A ciência do estudo (assunto 0.1):** diagnóstico antes, recuperação ativa, exemplos com retirada de apoio, intercalação, revisão espaçada, ensinar.
+- **O método do Professor (dev-setup):** 20/80 em duas passadas, exercícios N1–N4, protocolo de fim de bloco, ficha dupla e registro de entrevista.
 - **O mercado:** o que se cobra de júnior, pleno e sênior, e como o assunto aparece em entrevista.
+- **TDAH:** um roteiro de blocos curtos no começo do arquivo, para nunca precisar decidir "por onde eu começo".
 
 ---
 
@@ -21,73 +24,72 @@ tipo: modelo
 ---
 tags: [estudo, assunto, <área>]
 area: <número e nome da área no MAPA>
+etapa: <número no MAPA, ex.: 0.4>
 nivel-alvo: N1 | N2 | N3 | N4
 quando: M1 | T2 | H ...
 professor: <id do módulo no curriculo.json, se houver>
 prereq: [<assuntos que precisam vir antes>]
-etapa: <número no MAPA, ex.: 0.4>
+livro: <livro e trecho, como em `just livros para ETAPA`>
 status: a-estudar | estudando | dominado | ensinado
 verificado-em: AAAA-MM-DD
-versoes: [<ex.: TypeScript 5.x, Node 24>]
-fontes-conferidas: [<links das fontes primárias usadas>]
+versoes: [<ex.: Node 22, TypeScript 7>]
+fontes-conferidas: [<fontes primárias usadas>]
+pendente: [<o que não deu para confirmar>]
 atualizado: AAAA-MM-DD
 ---
 
 # <Assunto>
 
 > **Em uma frase:** ...
-> **Nível-alvo:** N? (o que isso quer dizer aqui: ...)
-> **Os 20% que resolvem 80%:** os 3 a 5 conceitos que vêm primeiro.
+> **Nível-alvo:** N? (o que isso quer dizer aqui)
+> **Os 20% que resolvem 80%:** 3 a 5 itens.
+
+## Roteiro (blocos de 25 minutos)
+| Bloco | O que fazer | Seções |
+Cada bloco termina com o protocolo de fim de bloco. O último inclui os registros (seção 15).
+
+## 0. Antes de começar: diagnóstico
+3 perguntas rápidas, sem consulta. Acertou as 3? Pule para os exercícios N3. Errou alguma? Siga o roteiro.
 
 ## 1. Por que isso existe (o problema e a história)
-Que problema resolveu, quem criou, o que havia antes. A motivação vem antes da definição.
-
 ## 2. O que é
-Definição precisa, com as palavras certas.
-
 ## 3. Como funciona por baixo
-O que a máquina, o SO, o compilador ou a rede realmente fazem. Um diagrama simples se ajudar.
-
-## 4. Conceitos que você precisa dominar
-- [ ] conceito — explicação curta
-(checklist; cada item vira cartão no Anki)
-
-## 5. Qualidades (por que é bom)
-
+## 4. Conceitos que você precisa dominar (checklist; cada item vira cartão com as suas palavras)
+## 5. Qualidades
 ## 6. Defeitos, limites e críticas
-Inclua as críticas sérias (do Akita e de outros). Nada é bala de prata.
-
 ## 7. Quando usar e quando não usar
-
 ## 8. Erros comuns
-Os erros de iniciante e os de quem acha que já sabe.
-
 ## 9. No seu setup e no AM Gestão
-Onde isso aparece no dev-setup e no produto, com arquivo ou comando.
+## 10. O que o mercado cobra (júnior, pleno, sênior, perguntas de entrevista)
 
-## 10. O que o mercado cobra
-- **Júnior:** ...
-- **Pleno:** ...
-- **Sênior:** ...
-- **Perguntas de entrevista:** 3 a 5 perguntas reais.
+## 11. Exemplos com retirada de apoio
+1. **Resolvido:** passo a passo, com o porquê de cada passo.
+2. **Com lacunas:** o mesmo tipo de problema, com partes para você completar.
+3. **Sozinho:** um problema parecido, sem ajuda.
+Todo código aqui é executado antes de entrar no arquivo (versão anotada no cabeçalho).
 
-## 11. Exercícios
-- **N1 (reconhecer):**
-- **N2 (aplicar):**
-- **N3 (combinar e achar o erro):**
-- **N4 (mini-projeto real):**
-Primeiro sem IA. A IA só corrige depois.
+## 12. Exercícios N1–N4
+N1 reconhecer · N2 aplicar · N3 combinar e achar o erro · N4 mini-projeto real. Primeiro sem IA.
 
-## 12. Fontes (na ordem de uso)
-1. Documentação oficial ou fonte primária
-2. Akita (episódio ou post)
-3. Curso da Alura (assistir antes da aula)
-4. Livro
+## 13. Gabarito comentado
+A resposta de cada exercício e, principalmente, **por que** ela é a certa e qual é o erro mais provável. Só consulte depois de tentar.
+
+## 14. Resumo de uma tela (para as revisões espaçadas)
+O mínimo para revisar em 2 minutos sem reler o arquivo: as definições, as regras e as armadilhas.
+
+## 15. Registros no setup
+- Leitura: `just livros ler LIVRO --trecho ... --min ... --assunto ETAPA --nota "..."`
+- Cada erro nos exercícios: `just erro ETAPA "o erro" --certo "o certo"`
+- Algo do setup travou ou foi manual: `just atrito "..." --area ...`
+- Fim do assunto: `just professor fechar ID MINUTOS` e preencha a ficha dupla e o registro de entrevista.
+
+## 16. Fontes (na ordem de uso)
+1. Documentação oficial ou fonte primária · 2. Akita (só o que foi conferido) · 3. Curso da Alura · 4. Livro
 (conteúdo pago e página de livro nunca vão para a IA)
 
-## 13. Como saber que dominou
+## 17. Como saber que dominou
 - Explico em 3 a 5 frases sem jargão.
 - Resolvo o N4 sem consulta.
-- Registro de entrevista: contexto, decisão, alternativa descartada, resultado com número.
+- Registro de entrevista preenchido.
 - (N4) Dei a aula de verdade: onde e quando.
 ```

@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-17 (4)
+
+### Alterado
+- Modelo de assunto v2: roteiro em blocos de 25 minutos, diagnóstico antes de começar, exemplos com retirada de apoio (resolvido, com lacunas, sozinho), gabarito comentado, resumo de uma tela e registros no setup (`just livros ler`, `just erro`, `just atrito`, `just professor fechar`).
+- 0.2 no modelo v2: entram ou exclusivo (XOR), precedência dos conectivos, ordem dos quantificadores, contingência e gabarito de todos os exercícios; todos os blocos de código executados com Node 22.23.4 e conferidos com `tsc --strict` (TypeScript 7.0.2).
+
 ## 2026-11-17 (3)
 
 ### Adicionado
