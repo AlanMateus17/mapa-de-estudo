@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-11-17 (3)
+
+### Adicionado
+- Assunto 0.2 *Linguagem matemática e lógica*, verificado pelo protocolo; exemplo resolvido executado com Node 22.23.4 e conferido com `tsc --strict` (TypeScript 7.0.2).
+
 ## 2026-11-17 (2)
 
 ### Alterado

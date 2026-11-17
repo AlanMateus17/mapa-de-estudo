@@ -39,7 +39,7 @@ atualizado: 2026-11-17
 | # | Assunto | Área | Conceitos | Nível | Depende de | Arquivo |
 |---|---|---|---|---|---|---|
 | 0.1 | Aprender a aprender | 00 | Recuperação ativa, prática espaçada, intercalação, autoexplicação, ensinar, prática deliberada, sono, estudar com TDAH, mitos a evitar | N3 | — | 📘 [aprender-a-aprender](assuntos/00-aprender-a-aprender/aprender-a-aprender.md) |
-| 0.2 | Linguagem matemática e lógica | 01 | Proposição, conectivos, tabela-verdade, quantificadores, implicação | N3 | 0.1 | 📝 |
+| 0.2 | Linguagem matemática e lógica | 01 | Proposição, conectivos, tabela-verdade, De Morgan, quantificadores e negação, implicação e contrapositiva, argumentos | N3 | 0.1 | 📘 [linguagem-matematica-e-logica](assuntos/01-matematica/linguagem-matematica-e-logica.md) |
 | 0.3 | Teoria dos conjuntos | 01 | Pertinência, inclusão, união, interseção, diferença, produto cartesiano | N3 | 0.2 | 📝 |
 | 0.4 | Como o computador funciona | 03 | Bit, byte, binário, hexadecimal, CPU, memória, programa como sequência de instruções, o que é um sistema operacional | N2 ★ | 0.1 | 📝 |
 | 0.5 | Representação de dados | 03 | Inteiros, complemento de dois, ponto flutuante IEEE 754 (por que `0.1 + 0.2 ≠ 0.3`), texto (ASCII, Unicode, UTF-8) | N2 ★ | 0.4 | 📝 |

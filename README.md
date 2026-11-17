@@ -29,8 +29,9 @@ Nenhum arquivo é publicado como 📘 sem passar pelo [protocolo de escrita](MAP
 | Assunto | Estado |
 |---|---|
 | 0.1 [Aprender a aprender](assuntos/00-aprender-a-aprender/aprender-a-aprender.md) | ✅ verificado em 2026-11-17 (pendências listadas no cabeçalho do arquivo) |
+| 0.2 [Linguagem matemática e lógica](assuntos/01-matematica/linguagem-matematica-e-logica.md) | ✅ verificado em 2026-11-17 (código executado com Node 22 e TypeScript 7) |
 
-Só entram aqui arquivos que já passaram pelo protocolo. Os próximos seguem a ordem do mapa: 0.4 *Como o computador funciona* e 0.5 *Representação de dados*.
+Só entram aqui arquivos que já passaram pelo protocolo. Os próximos seguem a ordem do mapa: 0.3 *Teoria dos conjuntos*, 0.4 *Como o computador funciona* e 0.5 *Representação de dados*.
 
 ## Estrutura
 
