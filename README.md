@@ -28,14 +28,9 @@ Nenhum arquivo é publicado como 📘 sem passar pelo [protocolo de escrita](MAP
 
 | Assunto | Estado |
 |---|---|
-| 0.1 Aprender a aprender | ✅ verificado em 2026-11-17 (pendências listadas no cabeçalho) |
-| 0.6 Lógica de programação | 📝 rascunho, ainda não passou pelo protocolo |
-| 1.3 Terminal Linux | 📝 rascunho, ainda não passou pelo protocolo |
-| 1.5 Git | 📝 rascunho, ainda não passou pelo protocolo |
-| 2.1 TypeScript | 📝 rascunho, ainda não passou pelo protocolo |
-| 4.4 POO | 📝 rascunho, ainda não passou pelo protocolo |
+| 0.1 [Aprender a aprender](assuntos/00-aprender-a-aprender/aprender-a-aprender.md) | ✅ verificado em 2026-11-17 (pendências listadas no cabeçalho do arquivo) |
 
-Os demais assuntos do mapa são escritos na ordem das etapas.
+Só entram aqui arquivos que já passaram pelo protocolo. Os próximos seguem a ordem do mapa: 0.4 *Como o computador funciona* e 0.5 *Representação de dados*.
 
 ## Estrutura
 
@@ -44,6 +39,7 @@ MAPA.md                  o mapa completo, em etapas
 assuntos/_MODELO.md      o modelo que todo arquivo de assunto segue
 assuntos/<área>/*.md     um arquivo por assunto
 CHANGELOG.md             o que mudou e quando
+LICENSE                  texto completo da licença CC BY-NC-SA 4.0
 ```
 
 ## Autor
@@ -52,4 +48,14 @@ Alan Mateus ([@AlanMateus17](https://github.com/AlanMateus17)), professor de inf
 
 ## Licença
 
-Conteúdo sob [CC BY-NC-SA 4.0](LICENSE.md): pode copiar, adaptar e compartilhar, citando o autor, sem uso comercial e com a mesma licença.
+Copyright © 2026 Alan Mateus.
+
+Conteúdo licenciado sob a **Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0)**. Texto completo no arquivo [LICENSE](LICENSE); resumo em português: [creativecommons.org](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt-br).
+
+Em resumo, você pode copiar, adaptar e compartilhar este material, desde que:
+
+- **dê crédito** ao autor, com link para este repositório, e indique se fez mudanças;
+- **não use para fins comerciais**;
+- **distribua o que adaptar sob a mesma licença**.
+
+Trechos citados de outras obras (artigos, documentação, livros) continuam pertencendo aos seus autores e aparecem aqui só como citação, com a fonte indicada.

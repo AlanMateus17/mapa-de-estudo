@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-17 (2)
+
+### Alterado
+- Licença: o resumo em `LICENSE.md` foi trocado pelo texto legal completo da CC BY-NC-SA 4.0 em `LICENSE`, copiado do repositório oficial da Creative Commons; aviso de copyright e resumo no README.
+
+### Removido
+- Os rascunhos de 0.6, 1.3, 1.5, 2.1 e 4.4: só ficam no repositório arquivos que passaram pelo protocolo. Eles voltam quando forem reescritos.
+
 ## 2026-11-17
 
 ### Adicionado

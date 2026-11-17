@@ -43,7 +43,7 @@ atualizado: 2026-11-17
 | 0.3 | Teoria dos conjuntos | 01 | Pertinência, inclusão, união, interseção, diferença, produto cartesiano | N3 | 0.2 | 📝 |
 | 0.4 | Como o computador funciona | 03 | Bit, byte, binário, hexadecimal, CPU, memória, programa como sequência de instruções, o que é um sistema operacional | N2 ★ | 0.1 | 📝 |
 | 0.5 | Representação de dados | 03 | Inteiros, complemento de dois, ponto flutuante IEEE 754 (por que `0.1 + 0.2 ≠ 0.3`), texto (ASCII, Unicode, UTF-8) | N2 ★ | 0.4 | 📝 |
-| 0.6 | Lógica de programação | 04 | Variável, tipo, operadores, condição, laço, função, coleção, recursão, teste de mesa | N3 ★ | 0.2, 0.4 | 📘 [logica-de-programacao](assuntos/04-ciencia-da-computacao/logica-de-programacao.md) |
+| 0.6 | Lógica de programação | 04 | Variável, tipo, operadores, condição, laço, função, coleção, recursão, teste de mesa | N3 ★ | 0.2, 0.4 | 📝 |
 | 0.7 | Ler documentação e inglês técnico | 00 | Documentação oficial, man pages, mensagens de erro, vocabulário técnico | N2 ★ | — | 📝 |
 
 **Ativo da etapa:** os 3 exercícios de lógica resolvidos no papel e no TS Playground.
@@ -56,9 +56,9 @@ atualizado: 2026-11-17
 |---|---|---|---|---|---|---|
 | 1.1 | Sistema operacional: o essencial | 05 | Kernel, processo, arquivo, sistema de arquivos, usuário, permissão, memória (visão geral) | N2 ★ | 0.4 | 📝 |
 | 1.2 | WSL2 e virtualização | 05 | Hypervisor, máquina virtual, WSL2, onde ficam os arquivos | N2 | 1.1 | 📝 |
-| 1.3 | Terminal Linux e shell | 05 | Navegar, ler, procurar, pipes, redirecionamento, permissões, processos, variáveis de ambiente, script básico | N3 ★ | 1.1, 1.2 | 📘 [terminal-linux](assuntos/05-sistemas-operacionais/terminal-linux.md) |
+| 1.3 | Terminal Linux e shell | 05 | Navegar, ler, procurar, pipes, redirecionamento, permissões, processos, variáveis de ambiente, script básico | N3 ★ | 1.1, 1.2 | 📝 |
 | 1.4 | Criptografia: o essencial | 13 | Hash, sal, chave simétrica e assimétrica, par de chaves, assinatura (o que cada um garante) | N1 ★ | 0.5 | 📝 |
-| 1.5 | Git e controle de versão | 08 | Commit, branch, merge, PR, conflitos, desfazer, hash do commit | N3 ★ | 1.3, 1.4 | 📘 [git](assuntos/08-engenharia-de-software/git.md) |
+| 1.5 | Git e controle de versão | 08 | Commit, branch, merge, PR, conflitos, desfazer, hash do commit | N3 ★ | 1.3, 1.4 | 📝 |
 | 1.6 | Segredos | 12 | KeePassXC, sops/age, variáveis de ambiente, nunca no Git | N3 ★ | 1.4, 1.5 | 📝 |
 | 1.7 | Backup e recuperação | 12 | restic, retenção, restaurar de verdade, snapshots | N3 | 1.3 | 📝 |
 | 1.8 | Containers e Docker | 12 | Imagem, container, Dockerfile, Compose, volume, porta; container × VM | N2 ★ | 1.1, 1.2, 1.3 | 📝 |
@@ -71,7 +71,7 @@ atualizado: 2026-11-17
 
 | # | Assunto | Área | Conceitos | Nível | Depende de | Arquivo |
 |---|---|---|---|---|---|---|
-| 2.1 | TypeScript: fundamentos | 07 | Tipos, inferência, union, funções, objetos, `type`/`interface`, arrays, `map/filter/reduce`, módulos | N2 ★ | 0.5, 0.6, 1.3 | 📘 [typescript-fundamentos](assuntos/07-linguagens/typescript-fundamentos.md) |
+| 2.1 | TypeScript: fundamentos | 07 | Tipos, inferência, union, funções, objetos, `type`/`interface`, arrays, `map/filter/reduce`, módulos | N2 ★ | 0.5, 0.6, 1.3 | 📝 |
 | 2.2 | Programação funcional: o essencial | 04 | Função pura, imutabilidade, função de ordem superior, closure, composição | N2 ★ | 2.1 | 📝 |
 | 2.3 | Estruturas de dados básicas e Big-O | 04 | Array, lista, pilha, fila, hash map, set; noção de O(1), O(n), O(n²) | N2 ★ | 0.6, 2.1 | 📝 |
 | 2.4 | Testes automatizados: o essencial | 08 | Teste de unidade, asserção, caso-limite, Vitest, rodar no terminal | N2 ★ | 2.1 | 📝 |
@@ -112,7 +112,7 @@ atualizado: 2026-11-17
 | 4.1 | Modelagem relacional | 10 | Entidade, relacionamento, chave primária e estrangeira, normalização | N2 ★ | 0.3, 2.3 | 📝 |
 | 4.2 | SQL | 07 | SELECT, WHERE, JOIN, GROUP BY, subconsulta, INSERT/UPDATE/DELETE, DDL (álgebra de conjuntos aplicada) | N3 ★ | 0.3, 4.1 | 📝 |
 | 4.3 | PostgreSQL: o essencial | 10 | Tipos, constraints, índices (noção de B-tree), transação e ACID (noção) | N2 ★ | 4.2, 1.8 | 📝 |
-| 4.4 | POO | 04 | Classe, objeto, encapsulamento, interface, polimorfismo, composição, injeção de dependência | N2 ★ | 2.1, 2.2 | 📘 [poo](assuntos/04-ciencia-da-computacao/poo.md) |
+| 4.4 | POO | 04 | Classe, objeto, encapsulamento, interface, polimorfismo, composição, injeção de dependência | N2 ★ | 2.1, 2.2 | 📝 |
 | 4.5 | Requisitos e histórias | 08 | Requisito funcional e não funcional, história de usuário, critério de aceite | N2 ★ | — | 📝 |
 | 4.6 | Arquitetura em camadas: o essencial | 08 | Domínio separado de infraestrutura, repository, por que a regra não conhece o banco | N2 ★ | 4.4 | 📝 |
 | 4.7 | APIs REST e contratos | 09 | Recursos, rotas, status corretos, OpenAPI, paginação, validação com Zod | N2 ★ | 3.2, 2.1 | 📝 |
@@ -195,7 +195,7 @@ atualizado: 2026-11-17
 
 | # | Assunto | Área | Conceitos | Nível | Depende de | Arquivo |
 |---|---|---|---|---|---|---|
-| 8.1 | ↻ POO e princípios SOLID | 04 · 08 | SRP, OCP, LSP, ISP, DIP; composição × herança com argumento | N4 ★ | 4.4, 4.6 | 📘 [poo](assuntos/04-ciencia-da-computacao/poo.md) |
+| 8.1 | ↻ POO e princípios SOLID | 04 · 08 | SRP, OCP, LSP, ISP, DIP; composição × herança com argumento | N4 ★ | 4.4, 4.6 | 📝 |
 | 8.2 | Padrões de projeto | 08 | Strategy, Factory, Adapter, Observer, Repository, Decorator | N3 ★ | 8.1 | 📝 |
 | 8.3 | Código limpo e refatoração | 08 | Code smells, refatorar com teste, passos pequenos | N4 ★ | 6.2, 8.1 | 📝 |
 | 8.4 | ↻ Arquitetura de software | 08 | Hexagonal, Clean Architecture, monólito modular × microsserviços, ADR | N4 ★ | 4.6, 8.1 | 📝 |
@@ -344,4 +344,4 @@ Para não estudar conteúdo raso, desatualizado ou com erro, cada 📝 só vira 
 6. **Cabeçalho de validade:** `verificado-em`, versões e fontes. Se a versão mudar muito, o arquivo volta para revisão.
 7. **Profundidade de verdade:** cada arquivo segue o [modelo](assuntos/_MODELO.md) inteiro, com o "como funciona por baixo" e exercícios N1–N4; nada de resumo de uma tela.
 
-Os 5 arquivos 📘 escritos antes desta ordem (lógica, terminal, Git, TypeScript e POO) **passam por esse protocolo de novo** antes de serem estudados.
+Só entram neste repositório arquivos que já passaram pelo protocolo.
