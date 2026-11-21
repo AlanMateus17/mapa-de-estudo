@@ -25,7 +25,7 @@ fontes-conferidas:
   - Akita #76 e #65, pelas transcrições completas publicadas no site dele (não pelo vídeo)
 pendente: []
 substitui: metodo-de-estudo.md do vault do autor (referência histórica)
-atualizado: 2026-11-17
+atualizado: 2026-11-21
 ---
 
 # Aprender a aprender
@@ -377,7 +377,8 @@ Faça depois do último bloco, num bloco próprio de 25 a 50 minutos. É o que t
    - **Anki:** Arquivo → Importar → `~/AMtech/banco/anki/0.1.tsv`.
    - **ensino-ti:** revise os planos de aula novos e faça o commit lá.
    - **Fila de conteúdo:** aprove ou recuse as peças que o pipeline gerar (`just fila`).
-6. **Depois de dar a aula de verdade (N4):** `just professor ensinei b-aprender`.
+6. **Registrar a nota:** corrija os exercícios da seção 12 pelo gabarito da seção 13 (resposta pela metade é errada), calcule a porcentagem de acertos e rode `just professor nota b-aprender NOTA` (sem IA) ou `just professor prova b-aprender` e `just professor corrigir b-aprender` (com IA). Com 80 ou mais, o Professor marca o nível 3, agenda a revisão espaçada e libera o 0.2.
+7. **Depois de dar a aula de verdade (N4):** `just professor ensinei b-aprender`.
 
 ## 16. Fontes (na ordem de uso)
 
