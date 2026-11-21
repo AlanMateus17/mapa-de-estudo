@@ -18,7 +18,7 @@ fontes-conferidas:
 pendente:
   - Nenhum episódio do Akita sobre lógica proposicional foi conferido; nenhum é citado
   - A ordem de precedência entre → e ↔ varia entre livros; confira a convenção do VHSlins
-atualizado: 2026-11-17
+atualizado: 2026-11-21
 ---
 
 # Linguagem matemática e lógica
@@ -400,7 +400,8 @@ Faça depois do último bloco, num bloco próprio de 25 a 50 minutos. É o que t
    - **Anki:** Arquivo → Importar → `~/AMtech/banco/anki/0.2.tsv`.
    - **ensino-ti:** revise os planos de aula novos e faça o commit lá.
    - **Fila de conteúdo:** aprove ou recuse as peças que o pipeline gerar (`just fila`).
-6. **Depois de dar a aula de verdade (N4):** `just professor ensinei mat-linguagem`.
+6. **Registrar a nota:** corrija os exercícios da seção 12 pelo gabarito da seção 13 (resposta pela metade é errada), calcule a porcentagem de acertos e rode `just professor nota mat-linguagem NOTA` (sem IA) ou `just professor prova mat-linguagem` e `just professor corrigir mat-linguagem` (com IA). Com 80 ou mais, o Professor marca o nível 3, agenda a revisão espaçada e libera os próximos assuntos que dependem do 0.2.
+7. **Depois de dar a aula de verdade (N4):** `just professor ensinei mat-linguagem`.
 
 ## 16. Fontes (na ordem de uso)
 

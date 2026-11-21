@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-11-21
+
+### Alterado
+- 0.1 e 0.2: passo "Registrar a nota" no fechamento do assunto (`just professor nota`, sem IA, ou `prova` e `corrigir`, com IA). No dev-setup v2.40 o Professor só libera um assunto depois que os assuntos de que ele depende passam na prova; sem esse passo, o 0.2 ficava bloqueado. Conteúdo do assunto não mudou.
+
 ## 2026-11-17 (6)
 
 ### Alterado
