@@ -20,7 +20,7 @@ fontes-conferidas:
   - Pashler et al. 2008, Psychological Science in the Public Interest 9(3)
   - Diekelmann e Born 2010, Nature Reviews Neuroscience 11
   - Sweller e Cooper 1985, Cognition and Instruction 2; Renkl, Atkinson, Maier e Staley 2002, Journal of Experimental Education 70(4); Kalyuga, Ayres, Chandler e Sweller 2003, Educational Psychologist 38
-  - Richland, Kornell e Kao 2009, Journal of Experimental Psychology: Applied 15(3); Butterfield e Metcalfe 2001, JEP: Learning, Memory, and Cognition 27(6)
+  - "Richland, Kornell e Kao 2009, Journal of Experimental Psychology: Applied 15(3); Butterfield e Metcalfe 2001, JEP: Learning, Memory, and Cognition 27(6)"
   - Manual do Anki (algoritmos SM-2 e FSRS)
   - Akita #76 e #65, pelas transcrições completas publicadas no site dele (não pelo vídeo)
 pendente: []

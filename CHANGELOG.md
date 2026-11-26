@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-11-26
+
+### Corrigido
+- 0.1: o frontmatter não era YAML válido. A fonte de Richland, Kornell e Kao 2009 e Butterfield e Metcalfe 2001 tinha ": " duas vezes sem aspas (Journal of Experimental Psychology: Applied; JEP: Learning); agora está entre aspas duplas.
+- 0.2: a fonte da Britannica ("History of logic: Gottlob Frege") virava um par chave: valor sem dar erro; agora está entre aspas simples.
+
+### Adicionado
+- `scripts/frontmatter.py` e o CI `Frontmatter`: todo assunto começa com frontmatter, o YAML é válido, é um mapa de campos e nenhum item de lista virou "chave: valor". Testes em `tests/test_frontmatter.py`. Regra: item com ": " vai entre aspas.
+
 ## 2026-11-21
 
 ### Alterado
