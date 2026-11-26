@@ -12,7 +12,7 @@ verificado-em: 2026-11-17
 versoes: [Node.js 22.23.4 (executa .ts direto), TypeScript 7.0.2 (tsc --strict sem erros em todos os exemplos)]
 fontes-conferidas:
   - Stanford Encyclopedia of Philosophy, "The Emergence of First-Order Logic" (Boole 1847, Frege 1879, Peirce 1885)
-  - Encyclopaedia Britannica, "History of logic: Gottlob Frege"
+  - 'Encyclopaedia Britannica, "History of logic: Gottlob Frege"'
   - Shannon 1938, "A Symbolic Analysis of Relay and Switching Circuits", Transactions of the AIEE 57(12) (tese de mestrado no MIT, 1937)
   - MDN, operadores lógicos AND (&&) e de coalescência nula (??)
 pendente:
